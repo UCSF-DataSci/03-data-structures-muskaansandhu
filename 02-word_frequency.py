@@ -18,13 +18,21 @@ Hints:
 """
 
 import sys
+import string
 
 def word_frequency(text):
     frequencies = {} # Dictionary to store word frequencies
-
-    # Your code here
     
-    return frequencies
+    lower_case = text.lower() #using .lower() to turn everything into lowercase
+    sep_words = lower_case.split() #using .split() to split 
+
+    for word in sep_words:
+        word = word.strip(string.punctuation)
+
+        if word: 
+            frequencies[word] = frequencies.get(word, 0) + 1
+    return dict(sorted(frequencies.items()))
+
 
 # Scaffold for opening a file and running word_frequency() on the contents
 if __name__ == "__main__":
