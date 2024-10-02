@@ -16,13 +16,21 @@ from datetime import date
 
 
 quotes = [
-    # Create a list of quotes here
-]
+    "We suffer more in imagination than in reality. - Seneca", 
+    "It never ceases to amaze me: we all love ourselves more than other people, but care more about their opinion than our own. - Marcus Aurelius",
+    "First say to yourself what you would be; and then do what you have to do. - Epictetus",
+    "Know, first, who you are, and then adorn yourself accordingly. - Epictetus",
+    "Luck is what happens when preparation meets opportunity. - Seneca", 
+    "Our life is what our thoughts make it. - Marcus Aurelius", 
+    "Give yourself a gift: the present moment. - Marcus Aurelius", 
+    "Spread love everywhere you go. Let no one ever come to you without leaving happier.  - Mother Teresa", 
+    "It is during our darkest moments that we must focus to see the light. - Aristotle",
+    "Education is bitter, but its fruit is sweet. - Aristotle"]
 
 def get_quote_of_the_day(quotes):
-    todays_quote = None
-
-    # Your code here
+    today = date.today()
+    random.seed(today)
+    todays_quote=random.choice(quotes)
     
     return todays_quote
 
