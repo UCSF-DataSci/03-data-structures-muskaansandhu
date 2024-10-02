@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 Daily Quote Generator
-
-This script selects a random quote for the day and prints it. Optional: The same quote should be generated for a given day.
+This script selects a random quote for the day and prints it. Optional: The same quote should be generated for a given day
 
 Your task:
+
 1. Complete the get_quote_of_the_day() function
 2. Set up a cron job to run this script daily at 8:00 AM and append the output to a file
 
