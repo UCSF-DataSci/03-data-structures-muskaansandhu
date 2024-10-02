@@ -25,7 +25,8 @@ quotes = [
     "Give yourself a gift: the present moment. - Marcus Aurelius", 
     "Spread love everywhere you go. Let no one ever come to you without leaving happier.  - Mother Teresa", 
     "It is during our darkest moments that we must focus to see the light. - Aristotle",
-    "Education is bitter, but its fruit is sweet. - Aristotle"]
+    "Education is bitter, but its fruit is sweet. - Aristotle"
+    ]
 
 def get_quote_of_the_day(quotes):
     today = date.today()
