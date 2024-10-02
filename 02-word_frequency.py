@@ -24,14 +24,14 @@ def word_frequency(text):
     frequencies = {} # Dictionary to store word frequencies
     
     lower_case = text.lower() #using .lower() to turn everything into lowercase
-    sep_words = lower_case.split() #using .split() to split 
+    sep_words = lower_case.split() #using .split() to split text into words 
 
     for word in sep_words:
-        word = word.strip(string.punctuation)
+        word = word.strip(string.punctuation) #removes trailing and leading whitespace and punctuation 
 
         if word: 
-            frequencies[word] = frequencies.get(word, 0) + 1
-    return dict(sorted(frequencies.items()))
+            frequencies[word] = frequencies.get(word, 0) + 1 #couting words 
+    return dict(sorted(frequencies.items())) #adding words to sorted dictionary 
 
 
 # Scaffold for opening a file and running word_frequency() on the contents

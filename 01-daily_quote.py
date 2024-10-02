@@ -29,9 +29,9 @@ quotes = [
     ]
 
 def get_quote_of_the_day(quotes):
-    today = date.today()
-    random.seed(today)
-    todays_quote=random.choice(quotes)
+    today = date.today() #setting today's date 
+    random.seed(today) #setting random seed based on date 
+    todays_quote=random.choice(quotes) #selecting random quote 
     
     return todays_quote
 
@@ -39,4 +39,4 @@ if __name__ == "__main__":
     print(get_quote_of_the_day(quotes))
 
 # Cron job (add this to your crontab):
-# 0 8 * * * /usr/bin/python3 /path/to/quote_generator.py >> /path/to/daily_quote.txt
+# 0 8 * * * /usr/bin/python3 /path/to/quote_generator.py >> /path/to/daily_quote.txt (edited with my own paths)
