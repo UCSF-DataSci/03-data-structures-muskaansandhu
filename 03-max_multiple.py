@@ -43,8 +43,8 @@ def find_greatest_product(number_string, adjacent_digits=13):
     
     #looping through the thousand digit number to extract 13 adjacent digits 
     for i in range(len(number_string) - adjacent_digits + 1): 
-        slicing = number_string[i:i + adjacent_digits]
-        product = 1
+        slicing = number_string[i:i + adjacent_digits] 
+        product = 1 #setting it equal to one so it doesn't affect multiplication 
         for character in slicing:
             product *= int(character)
 
